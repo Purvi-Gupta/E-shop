@@ -9,7 +9,7 @@ import MessageBox from "../components/MessageBox";
 // import data from '../data';
 
 const reducer = (state, action) => {
-  switch (action.type) {
+  switch (action.type) { 
     case "FETCH_REQUEST":
       return { ...state, loading: true };
     case "FETCH_SUCCESS":
