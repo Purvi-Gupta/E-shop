@@ -6,12 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+ 
 }
+
 .site-container {
   min-height: 100vh;
 }
 main {
   flex: 1;
+}
+
+.card-conatiner:hover {
+  transition: 0.2s;
+  transform: scale(1.01);
 }
 .btn-primary {
   background-color: #f0c040;
@@ -21,6 +28,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-shadow: 0 2px 120px #eee;
+  margin-top: 2rem;
 }
 
 .rating span {
@@ -41,6 +50,18 @@ main {
 .img-large {
   max-width: 80%;
 }
-.img-thumbnail{
+.img-thumbnail {
   height: 80px;
+  border: none;
+}
+.small-container{
+  max-width: 600px;
+}
+.singin-form{
+  align-items: center;
+  border-radius: .25rem;
+  background: #f8f8f8;
+  box-shadow: 0 2px 8px #ccc;
+  margin-top: 2rem;
+  padding: 2rem 5rem; 
 }

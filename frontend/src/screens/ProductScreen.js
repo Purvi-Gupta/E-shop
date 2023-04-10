@@ -65,6 +65,8 @@ function ProductScreen() {
     navigate("/cart");
   };
 
+  
+
   return loading ? (
     <LodingBox />
   ) : error ? (
@@ -74,9 +76,9 @@ function ProductScreen() {
       <Col md={6}>
         <img className="img-large" src={product.image} alt={product.name}></img>
       </Col>
-      <Col md={3}>
+      <Col md={3} >
         <ListGroup variant="flush">
-          <ListGroup.Item>
+          <ListGroup.Item >
             <Helmet>
               <title>{product.name}</title>
             </Helmet>
@@ -92,7 +94,7 @@ function ProductScreen() {
       <Col md={3}>
         <Card>
           <Card.Body>
-            <ListGroup variant="flush">
+            <ListGroup variant="flush" >
               <ListGroup.Item>
                 <Row>
                   <Col>Price :</Col>

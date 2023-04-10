@@ -43,7 +43,7 @@ function HomeScreen() {
     fetchData();
   }, []);
   return (
-    <div>
+    <div >
       <Helmet>
         <title>Amazona</title>
       </Helmet>
@@ -54,9 +54,9 @@ function HomeScreen() {
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
-          <Row>
+          <Row style={{background:"#f8f8f8"}}>
             {products.map((product) => (
-              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3">
+              <Col key={product.slug} sm={6} md={4} lg={3} className="mb-3" >
                 <Product product={product}></Product>
               </Col>
             ))}
